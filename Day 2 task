@@ -1,0 +1,11 @@
+Difference between Document object and window object
+
+Document
+1.It is an object of window
+2.The properties related to it are stored in the document object.
+3.We can not access windows objects properties inside the document.
+
+Window object
+1.It is an object of the browser
+2.The properties related to it are stored in the window object.
+3.We can access document object properties inside the window.
