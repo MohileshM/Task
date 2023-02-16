@@ -1,0 +1,22 @@
+Difference between HTTP1.1 vs HTTP2
+
+HTTP/1.1
+1.it works on the textual format.
+2.It uses requests resource Inlining for use getting multiple pages
+3.It compresses data by itself
+
+HTTP/2
+1.It works on the binary protocol
+2.It uses PUSH frame by server that collects all multiple pages 
+3.It uses HPACK for data compression
+
+
+
+Objects 
+Objects in programming can be a combination of variables, functions, and data structures. This means that objects can store values, it can be used manipulate values and combine them into more complex objects
+eg :
+var bike ={
+  color : "red",
+  speed : 100,
+  type : sport bike,
+} 
