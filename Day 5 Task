@@ -1,0 +1,156 @@
+ 1)
+a. 
+    function odd(){
+           for(var i=1;i<=10;i++)
+           if(i%2==0) {
+            console.log(i)
+           }
+        }
+        odd();
+
+b.
+     function cap(){
+
+            let text = "mohilesh";
+          let result = text.toUpperCase();
+          console.log(result)
+        }
+        cap();
+
+c.
+        function sum(){
+        function arr(array) {
+  var arr = [1,2,3,4,5];
+  let sum = 0;
+
+  for (let i = 0; i < arr.length; i+=1) {
+    sum += arr[i];
+  }
+  
+  return sum;
+}
+
+console.log(arr([1,2,3,4,5]));
+}
+sum();
+
+d.
+      function prime(){
+            var arr = [2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+arr = arr.filter((number) => {
+  for (var i = 2; i <= Math.sqrt(number); i++) {
+    if (number % i === 0) return false;
+  }
+  return true;
+});
+
+console.log(arr);
+
+}      
+prime();
+
+
+e. 
+
+  
+     function rev(){
+     let arr = ["1","2","3","4","5"]
+arr.reverse()
+console.log(arr)
+}      
+rev();
+
+f.
+    function sort()
+{
+
+  var array = (arr1, arr2) => [...arr1, ...arr2].sort((a,b) => a-b);
+
+let ar1 =[-7, 2, 4, 22, 66, 99];
+let ar2 = [1, 5, 9, 88];
+
+console.log( array(ar1, ar2) ); 
+}
+
+sort();
+
+g. 
+
+ function rotate(){
+ var arr=[1,2,3,4,5]
+    for (let i = 0; i < arr.length; i++) {
+        console.log(arr[i]+ " ");
+    }
+}
+rotate();
+
+
+
+ 
+h.
+  function duplicate(){
+var arr = ["one", "two", "three", "four", "two", "three"];
+      
+    function duplic(arr) {
+        return arr.filter((item, 
+            index) => arr.indexOf(item) === index);
+    }
+      
+    console.log(duplic(arr));   }
+duplicate();
+ 
+
+
+
+
+
+
+2. ARROW FUNCTION
+
+a.
+    var odd = [ 1, 2, 3, 4, 5, 6, 7, 8, 9]
+const num = odd.filter(ele => ele % 2 == 0)
+                                   
+console.log(num);
+
+b. titleCase = (str) => {
+                    str = str.toLowerCase().split(' ');
+                    for (var i = 0; i < str.length; i++) {
+                      str[i] = str[i].charAt(0).toUpperCase() + str[i].slice(1); 
+                    } 
+                    return str.join(' ');
+                  }   
+  
+c. 
+  sum = (a, b) => {
+  return(a+b)
+}
+  arr= sum(1,2)
+  console.log(arr)
+
+d.  primeNumber = (numArray) => {
+                      numArray = numArray.filter((number) => {
+                        for (var i = 2; i <= Math.sqrt(number); i++) {
+                          if (number % i === 0) return false;
+                        }
+                        return true;
+                      });
+                      console.log(numArray);
+                  }
+
+e.
+  Palindrome = (arr, n) =>
+    {
+        // Traversing each element of the array
+        // and check if it is palindrome or not
+        for (let i = 0; i < n; i++)
+        {
+            let ans = isPalindrome(arr[i]);
+            if (ans == false)
+                return false;
+        }
+        return true;
+    }
+
+   
