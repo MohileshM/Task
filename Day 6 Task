@@ -1,0 +1,99 @@
+1.
+  a. class Movie{  
+            
+            constructor(title,studio,rating){
+                this.title=title;
+                this.studio=studio;
+                 this.rating=rating
+            }
+        }
+        var film=new Movie("Casino royale","Eon production","PG13")
+        console.log(film)
+       
+   b.
+      class Movie{
+        constructor(title,studio,rating){
+                  this.title=title;
+                  this.stduio=studio;
+                  if(rating==null||rating ==undefined){
+                    return this.rating="PG"
+                }else{
+                    return this.rating=rating
+                }
+        }
+      }
+       var film1=new Movie("casino royale","Eon production","PG13")
+       console.log(film1)
+           
+       var film2=new Movie("XYZ Royale","XYZ Productions")
+        console.log(film2)
+
+        var film3=new Movie("ABC Royale","ABC Productions","PG20")
+        console.log(film3)
+
+  c.
+      class Movie{          
+            getPG(array){
+                console.log(array)
+                
+                let result=[]
+                for(var i=0;i<array.length;i++){
+                    if(array[i].rating=="PG"){
+                        console.log("return the film")
+                        result.push(array[i])
+                    }              
+            }
+            return result                 
+            }
+        }  
+        var film1=new Movie("Casino Royale","Eon Productions","PG13")
+        console.log(film1)
+        var film2=new Movie("XYZ Royale","XYZ Productions")
+        console.log(film2)
+        var film3=new Movie("ABC Royale","ABC Productions","PG20")
+        console.log(film3)
+        var film4=new Movie("PAR Royale","PAR Productions")
+        console.log(film4)
+        var film5=new Movie("AFR Royale","AFR Productions")
+        console.log(film5)
+        console.log([film1,film2,film3,film4,film5])      
+        let array=[film1,film2,film3,film4,film5]
+        console.log(film2.getPG(array))
+     
+  
+  
+  d.
+     class Movie{
+        constructor(title,studio,rating){
+                  this.title=title,
+                  this.stduio=studio,
+                  this.rating=rating 
+        }
+       }
+       var film=new Movie("casino royale","Eon production","PG13")
+       console.log(film)
+   
+ 3 . 
+   
+       function Person() {
+    this.firstName = "unknown";
+    this.lastName = "unknown";
+}
+
+var person1 = new Person();
+person1.firstName = "arun";
+person1.lastName = "kumar";
+            
+
+console.log(person1.firstName + " " + person1.lastName)
+
+var person2 = new Person();
+person2.firstName = "vijay";
+person2.lastName = "kumar";
+            
+console.log(person2.firstName + " " + person2.lastName)
+
+
+
+
+   
